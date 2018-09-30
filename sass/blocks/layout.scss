@@ -1,0 +1,62 @@
+.layuot {
+	display: flex;
+	border-bottom: 2px solid #eeeeee;
+}
+
+.layuot__item {
+	position: relative;
+	width: 280px;
+	height: 180px;
+	opacity: .2;
+
+	&--academy {
+		background-image: url(../img/logo-academy.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+
+	&--borod {
+	width: 300px;
+	background-image: url(../img/logo-borod.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	}
+  
+	&--pink {
+	width: 300px;
+	background-image: url(../img/logo-pink.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	}
+
+	&--bear {
+	background-image: url(../img/logo-bear.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	}
+
+	&:hover {
+		opacity: 1;
+		transform: scale(1.5);
+	}
+
+	&:active {
+		opacity: .1;
+	}
+}
+
+.layuot__item::after {
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 52px;
+	background: #eeeeee;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 1px;
+}
+
+.layuot__item:nth-child(4)::after {
+  display: none;
+}

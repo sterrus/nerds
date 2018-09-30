@@ -1,0 +1,96 @@
+.studio {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	padding-bottom: 60px;
+	border-bottom: 2px solid #eeeeee;
+}
+
+.studio__container-left {
+	width: 660px;
+}
+
+.studio__container-right {
+	padding-top: 249px;
+	width: 360px;
+	background-image: url(../img/nerds-illustration.jpg);
+	background-repeat: no-repeat;
+	background-size: 360px 208px;
+}
+
+.studio__title {
+	margin-bottom: 35px;
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+}
+
+.studio__text {
+	margin-bottom: 35px;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.studio__subtitle {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.studio__list {
+	padding-left: 37px;
+}
+
+.studio__list-item {
+	position: relative;
+	margin-bottom: 20px;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+
+	&::before {
+		position: absolute;
+		content: "";
+		background-color: #fb656a;
+		width: 25px;
+		height: 2px;
+		top: 50%;
+		left: -36px;
+	}
+}
+
+.studio__rigth-title {
+	margin-bottom: 51px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.studio__result {
+	display: flex;
+}
+
+.studio__result-item {
+	margin-right: 27px;
+}
+
+.studio__result-title {
+	margin-bottom: 27px;
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 700;
+
+	&:hover {
+		transform: scale(1.5);
+	}
+}
+
+.studio__result-description {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}

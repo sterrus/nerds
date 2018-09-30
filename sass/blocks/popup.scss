@@ -1,0 +1,141 @@
+.popup {
+	display: none;
+	position: fixed;
+	box-sizing: border-box;
+	width: 960px;
+	padding: 28px 100px 84px 100px;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	background: #ffffff;
+	box-shadow: 0 4px 50px -5px rgba(4, 6, 6, .75);
+}
+
+.popup__show {
+  display: block;
+}
+
+.popup__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.popup__header-title {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+}
+
+.popup__header-close {
+	position: relative;
+	width: 21px;
+	height: 21px;
+	font-size: 0;
+	border: 0;
+	outline: none;
+	background: #ffffff;
+	opacity: .3;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	&:active {
+		opacity: .1;
+	}
+}
+
+.popup__header-close::before {
+  position: absolute;
+  content: '';
+  width: 21px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: #fb565a;
+//  transform: translateX(50%) rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.popup__header-close::after {
+  position: absolute;
+  content: '';
+  width: 21px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: #fb565a;
+//  transform: translateX(50%) rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.popup__form-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.popup__form-item {
+	width: 360px;
+	margin-bottom: 35px;
+
+	&--textarea {
+		width: 760px;
+		margin-bottom: 47px;
+	}
+}
+
+.popup__form-label {
+	display: block;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.popup__form-input {
+	padding: 10px;
+	width: 340px;
+	opacity: .5;
+	border: 2px solid #d7dcde;
+	outline: none;
+
+	&:focus {
+		opacity: 1;
+		border: 2px solid #000000;
+	}
+}
+
+.popup__form-textarea {
+	width: 745px;
+	min-height: 114px;
+	padding-left: 11px;
+	border: 2px solid #d7dcde;
+	resize: none;
+	outline: none;
+	opacity: .5;
+
+	&:focus {
+		opacity: 1;
+		border: 2px solid #000000;
+	}
+}
+
+.popup__form-button {
+	padding: 18px 84px;
+	background: #fb656a;
+	color: #ffffff;
+	border: none;
+	text-transform: uppercase;
+	outline: none;
+
+	&:hover {
+		background: #e74246;
+	}
+
+	&:active {
+		background: #d7373b;
+		color: rgba(255, 255, 255, .3);
+	}
+}
